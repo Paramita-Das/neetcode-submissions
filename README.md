@@ -58,6 +58,19 @@ Python For Beginners/python-hello-world/submission-0.py
 
 ---
 
+## Running Solutions Locally
+
+Since the solutions are structured as `Solution` classes (as expected by LeetCode), you can test them locally by creating a small wrapper:
+
+```javascript
+// Example for two-integer-sum
+const { Solution } = require('./Data Structures & Algorithms/two-integer-sum/submission-2.js');
+const sol = new Solution();
+console.log(sol.twoSum([2, 7, 11, 15], 9)); // Expected: [1, 0] or [0, 1]
+```
+
+---
+
 ## Settings
 
 Manage your sync preferences at [neetcode.io/profile/github](https://neetcode.io/profile/github):
