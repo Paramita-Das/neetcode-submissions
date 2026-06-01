@@ -1,0 +1,16 @@
+class Solution {
+    /**
+     * @param {number[]} prices
+     * @return {number}
+     */
+    maxProfit(prices) {
+        let maxProfit = 0;
+        let minPrice = Infinity;
+        for (let price of prices) {
+            minPrice = Math.min(minPrice, price);
+            let profit = price - minPrice;
+            maxProfit = Math.max(maxProfit, profit)
+        }
+        return maxProfit
+    }
+}
